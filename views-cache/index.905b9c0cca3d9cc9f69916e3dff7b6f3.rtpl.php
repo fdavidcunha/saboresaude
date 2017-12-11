@@ -20,7 +20,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
-                                style="z-index: 3">We Make Delicious...
+                                style="z-index: 3">Nós fazemos delícias...
                             </div>
                             <!-- LAYER NR. 2.0 -->
                             <div class="tp-caption lfl medium_bg_darkblue br-green"
@@ -31,7 +31,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Power4.easeIn"
-                                data-captionhidden="off">Consectetur Adipisicing
+                                data-captionhidden="off">Sem óleo
                             </div>
                             <!-- LAYER NR. 2.1 -->
                             <div class="tp-caption lfl medium_bg_darkblue br-lblue"
@@ -42,7 +42,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
-                                style="z-index: 3">Sed do Seusmod
+                                style="z-index: 3">Sem gordura
                             </div>
                             <!-- LAYER NR. 2.2 -->
                             <div class="tp-caption lfl medium_bg_darkblue br-purple"
@@ -53,7 +53,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
-                                style="z-index: 3">Incididunt ut Labore
+                                style="z-index: 3">Sem conservantes
                             </div>
                             <!-- LAYER NR. 2.3 -->
                             <div class="tp-caption lfl medium_bg_darkblue br-orange"
@@ -64,7 +64,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
-                                style="z-index: 3">Excepteur Sint 
+                                style="z-index: 3">e com amor...
                             </div>
                             <!-- LAYER NR. 3.0 -->
                             <div class="tp-caption customin customout"
@@ -129,7 +129,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
-                                style="z-index: 3">The New
+                                style="z-index: 3">Experimente nossos
                             </div>
                             <!-- LAYER NR. 1.1 -->
                             <div class="tp-caption large_bold_grey heading customin customout"
@@ -146,7 +146,7 @@
                                 data-endspeed="500"
                                 data-endeasing="Power3.easeInOut"
                                 data-captionhidden="on"
-                                style="z-index:5">CakeFactory
+                                style="z-index:5">Sucos naturais
                             </div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption customin customout"
@@ -187,7 +187,7 @@
                                 data-endeasing="Power4.easeIn"
                                 style="z-index: 3"><img class="img-responsive" src="/res/site/img/slider/s13.png" alt="" />
                             </div>
-                            <!-- LAYER NR. 2.3 -->
+                            <!-- LAYER NR. 2.3 
                             <div class="tp-caption sft"
                                 data-x="right" data-hoffset="-400"
                                 data-y="80"
@@ -197,7 +197,7 @@
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
                                 style="z-index: 10"><span class="price-tag br-white">30%<br />Off</span>
-                            </div>
+                            </div> -->
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption finewide_verysmall_white_mw paragraph customin customout tp-resizeme"
                                 data-x="20"
@@ -212,9 +212,9 @@
                                 data-elementdelay="0.2"
                                 data-endelementdelay="0.08"
                                 data-endspeed="300"
-                                style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Lorem ipsum dolor sit amet, consetetur<br/>  sadipscing elitr, sed diam nonumy<br/>  eirmod tempor invidunt ut labore et<br/>  dolore magna aliquyam erat, sed diam <br/> voluptua. At vero eos et accusam.
+                                style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">  Da polpa ou da fruta.<br/>  Com ou sem adição de açúcar/adoçante.<br/>  Você é quem escolhe!
                             </div>
-                            <!-- LAYER NR. 4 -->
+                            <!-- LAYER NR. 4 
                             <div class="tp-caption sfb"
                                 data-x="20" 
                                 data-y="335"
@@ -224,7 +224,7 @@
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
                                 style="z-index: 11"><a class="btn btn-danger" href="#">Download</a> <a class="btn btn-success hidden-xs" href="#">Purchase Now</a>
-                            </div>
+                            </div> -->
                         </li>
                         <li data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="600" >
                             <!-- MAIN IMAGE -->
@@ -238,7 +238,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Linear.easeNone"
-                                data-captionhidden="off"><img class="img-responsive" src="/res/site/img/slider/s35.png" alt="" />
+                                data-captionhidden="off"><img class="img-responsive" src="/res/site/img/slider/sanduiche-natural.png" alt="" />
                             </div>
                             <!-- LAYERS NR. 2 -->
                             <div class="tp-caption lfr large_bold_grey heading white"
@@ -249,7 +249,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Linear.easeNone"
-                                data-captionhidden="off">Tasty Yammi
+                                data-captionhidden="off">Linha leve
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption whitedivider3px customin customout tp-resizeme"
@@ -280,7 +280,7 @@
                                 data-elementdelay="0.08"
                                 data-endelementdelay="0.08"
                                 data-endspeed="500"
-                                style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">Hamburger
+                                style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">Sanduíches e +
                             </div>
                             <!-- LAYER NR. 5 -->
                             <div class="tp-caption finewide_verysmall_white_mw white customin customout tp-resizeme text-right paragraph"
@@ -296,7 +296,7 @@
                                 data-elementdelay="0.2"
                                 data-endelementdelay="0.08"
                                 data-endspeed="300"
-                                style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Lorem ipsum dolor sit amet, consetetur  sadipscing elitr,<br/> nonumy voluptu ansetetur  sadipscing elit. <br/> sed diam quisquam est nonumy voluptu vero eos et.
+                                style="z-index: 10; max-width: auto; max-height: auto; white-space: nowrap;">Para quem não abre mão de uma refeição importante ou até mesmo um lanchinho rápido, sem sair da dieta.
                             </div>
                         </li>
                         <li data-transition="cube" data-slotamount="7" data-masterspeed="600" >
@@ -311,7 +311,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Power4.easeIn"
-                                data-captionhidden="off"><img src="/res/site/img/slider/s31.png" class="img-responsive" alt="" />
+                                data-captionhidden="off"><img src="/res/site/img/slider/s31-desfocado.png" class="img-responsive" alt="" />
                             </div>
                             <!-- LAYERS NR. 2 -->
                             <div class="tp-caption lfl"
@@ -322,7 +322,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Power4.easeIn"
-                                data-captionhidden="off"><img src="/res/site/img/slider/s33.png" class="img-responsive" alt="" />
+                                data-captionhidden="off"><img src="/res/site/img/slider/s33-desfocado.png" class="img-responsive" alt="" />
                             </div>
                             <!-- LAYERS NR. 3 -->
                             <div class="tp-caption lfl"
@@ -333,7 +333,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Power4.easeIn"
-                                data-captionhidden="off"><img src="/res/site/img/slider/s34.png" class="img-responsive" alt="" />
+                                data-captionhidden="off"><img src="/res/site/img/slider/s34-desfocado.png" class="img-responsive" alt="" />
                             </div>
                             <!-- LAYERS NR. 4 -->
                             <div class="tp-caption sfr  thinheadline_dark white"
@@ -355,7 +355,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Linear.easeNone"
-                                data-captionhidden="off">Seats Reserve
+                                data-captionhidden="off">Sempre!
                             </div>
                             <!-- LAYERS NR. 5 -->
                             <div class="tp-caption skewfromright medium_text text-right paragraph"
@@ -366,7 +366,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="400"
                                 data-endeasing="Power4.easeOut"
-                                data-captionhidden="off">At vero eos etntium accu amet, adipisicing samus iusto<br />praese  delen itieos etconsectetur atque corrupti<br />praese etntiumder delen itierrupti.
+                                data-captionhidden="off">Compre online a partir de qualquer dispositivo.<br />Sem instalação, sem anúncios.<br />Ambiente virtual 100% seguro.
                             </div>
                             <!-- LAYERS NR. 6 // -->
                             <div class="tp-caption lfr modern_big_redbg br-red"
@@ -378,7 +378,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Linear.easeNone"
-                                data-captionhidden="off">Desktop or Laptop
+                                data-captionhidden="off">PC ou Notebook
                             </div>  
                             <!-- LAYERS NR. 6.1 // -->
                             <div class="tp-caption lfr modern_big_redbg br-yellow"
@@ -390,7 +390,7 @@
                                 data-easing="Power4.easeOut"
                                 data-endspeed="300"
                                 data-endeasing="Linear.easeNone"
-                                data-captionhidden="off">Tablet or Phone
+                                data-captionhidden="off">Tablet ou SmartPhone
                             </div>
                         </li>
                     </ul>
@@ -403,41 +403,6 @@
             <!-- Main Content -->
             <div class="main-content">
             
-                <!-- Showcase Start -->
-                
-                <div class="showcase">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <!-- Showcase section item -->
-                                <div class="showcase-item">
-                                    <!-- Image -->
-                                    <img class="img-responsive" src="/res/site/img/fruit2.png" alt="" />
-                                    <!-- Heading -->
-                                    <h3><a href="#">Equine Porno Sumos</a></h3>
-                                    <!-- Paragraph -->
-                                    <p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <!-- Showcase section item -->
-                                <div class="showcase-item">
-                                    <!-- Image -->
-                                    <img class="img-responsive" src="/res/site/img/fruit3.png" alt="" />
-                                    <!-- Heading -->
-                                    <h3><a href="#">Equine Porno Sumos</a></h3>
-                                    <!-- Paragraph -->
-                                    <p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Showcase End -->
-                
                 <!-- Dishes Start -->
                     
                 <div class="dishes padd">
@@ -447,9 +412,9 @@
                             <!-- Crown image -->
                             <img class="img-responsive" src="/res/site/img/crown.png" alt="" />
                             <!-- Heading -->
-                            <h2>New Dishes</h2>
+                            <h2>Novos pratos</h2>
                             <!-- Paragraph -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Estamos sempre montando novos pratos. Confira os mais recentes abaixo.</p>
                             <!-- Border -->
                             <div class="border"></div>
                         </div>
@@ -772,9 +737,9 @@
                             <!-- Crown image -->
                             <img class="img-responsive" src="/res/site/img/crown.png" alt="" />
                             <!-- Heading -->
-                            <h2>Offer Price</h2>
+                            <h2>Promoções</h2>
                             <!-- Paragraph -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Procurando uma refeição ou um lanche saudável com um precinho camarada? Confira logo abaixo o que separamos para você.</p>
                             <!-- Border -->
                             <div class="border"></div>
                         </div>
@@ -865,97 +830,6 @@
                 </div>
                 
                 <!-- Pricing End -->
-                
-                <!-- Chefs Start -->
-                
-                <div class="chefs padd">
-                    <div class="container">
-                        <!-- Default Heading -->
-                        <div class="default-heading">
-                            <!-- Crown image -->
-                            <img class="img-responsive" src="/res/site/img/crown.png" alt="" />
-                            <!-- Heading -->
-                            <h2>Our Chefs</h2>
-                            <!-- Paragraph -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <!-- Border -->
-                            <div class="border"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <!-- Chef Member -->
-                                <div class="chefs-member">
-                                    <!-- Chefs member header -->
-                                    <div class="chefs-head">
-                                        <!-- Member background image -->
-                                        <img class="chefs-back img-responsive" src="/res/site/img/chef/c-back2.jpg" alt="" />
-                                        <!-- chef member image -->
-                                        <img class="chefs-img img-responsive" src="/res/site/img/chef/4.jpg" alt="" />
-                                    </div>
-                                    <!--Name / Heading -->
-                                    <h3><a href="#">Venison Gorky</a></h3>
-                                    <!-- Member designation -->
-                                    <span>Chefs Incharge</span>
-                                    <!-- Social media links -->
-                                    <div class="social">
-                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <!-- Chef Member -->
-                                <div class="chefs-member">
-                                    <!-- Chefs member header -->
-                                    <div class="chefs-head">
-                                        <!-- Member background image -->
-                                        <img class="chefs-back img-responsive" src="/res/site/img/chef/c-back1.jpg" alt="" />
-                                        <!-- chef member image -->
-                                        <img class="chefs-img img-responsive" src="/res/site/img/chef/7.jpg" alt="" />
-                                    </div>
-                                    <!--Name / Heading -->
-                                    <h3><a href="#">Million Carey</a></h3>
-                                    <!-- Member designation -->
-                                    <span>Chefs Incharge</span>
-                                    <!-- Social media links -->
-                                    <div class="social">
-                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <!-- Chef Member -->
-                                <div class="chefs-member">
-                                    <!-- Chefs member header -->
-                                    <div class="chefs-head">
-                                        <!-- Member background image -->
-                                        <img class="chefs-back img-responsive" src="/res/site/img/chef/c-back3.jpg" alt="" />
-                                        <!-- chef member image -->
-                                        <img class="chefs-img img-responsive" src="/res/site/img/chef/2.jpg" alt="" />
-                                    </div>
-                                    <!--Name / Heading -->
-                                    <h3><a href="#">Juliet Watson</a></h3>
-                                    <!-- Member designation -->
-                                    <span>Chefs Incharge</span>
-                                    <!-- Social media links -->
-                                    <div class="social">
-                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Chefs End -->
                 
                 <!-- Testimonial Start -->
                 
