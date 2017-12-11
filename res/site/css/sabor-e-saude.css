@@ -1,0 +1,9 @@
+.foto-redonda {
+   width: 50px;
+   height: 40px;
+   background-color: #000;
+   color: #FFF;
+ 
+   /* Agora a mágica */
+   border-radius: 50%;
+}
