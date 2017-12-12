@@ -1,4 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
 <!-- Content Header (Page header) -->
 <section class="content-header">
@@ -18,22 +18,22 @@
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <form role="form" action="/admin/categories/{$category.idcategory}" method="post">
+        <form role="form" action="/admin/categories/<?php echo htmlspecialchars( $category["idcategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" method="post">
           <div class="box-body">
             
             <div class="form-group">
               <label for="descategory">Nome da categoria</label>
-              <input type="text" class="form-control" id="descategory" name="descategory" placeholder="Digite o nome da categoria" value="{$category.descategory}">
+              <input type="text" class="form-control" id="descategory" name="descategory" placeholder="Digite o nome da categoria" value="<?php echo htmlspecialchars( $category["descategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?>">
             </div>
             
             <div class="form-group">
               <label for="desdescription">Descrição</label>
-              <textarea class="form-control" id="desdescription" name="desdescription" placeholder="Descrição">{$category.desdescription}</textarea>
+              <textarea class="form-control" id="desdescription" name="desdescription" placeholder="Descrição"><?php echo htmlspecialchars( $category["desdescription"], ENT_COMPAT, 'UTF-8', FALSE ); ?></textarea>
             </div>
 
             <div class="checkbox">
               <label>
-                <input type="checkbox" name="availablemenu" value="1" {if="$category.availablemenu == 1"}checked{/if}> Disponível no menu do site
+                <input type="checkbox" name="availablemenu" value="1" <?php if( $category["availablemenu"] == 1 ){ ?>checked<?php } ?>> Disponível no menu do site
               </label>
             </div>
 

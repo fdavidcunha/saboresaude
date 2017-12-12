@@ -38,10 +38,23 @@
         <!-- form start -->
         <form role="form" action="/admin/categories/create" method="post">
           <div class="box-body">
+            
             <div class="form-group">
               <label for="descategory">Nome da categoria</label>
               <input type="text" class="form-control" id="descategory" name="descategory" placeholder="Digite o nome da categoria">
             </div>
+            
+            <div class="form-group">
+              <label for="desdescription">Descrição</label>
+              <textarea class="form-control" id="desdescription" name="desdescription" placeholder="Descrição"></textarea>
+            </div>
+            
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="availablemenu" value="1"> Disponível no menu do site
+              </label>
+            </div>
+
           </div>
           <!-- /.box-body -->
           <div class="box-footer">

@@ -228,12 +228,21 @@
                                     <!-- Collect the nav links, forms, and other content for toggling -->
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav">
-                                            <li><a href="index.html"><img src="/res/site/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Início</a></li>
+                                            <li>
+                                                <a href="index.html">
+                                                    <img src="/res/site/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Início
+                                                </a>
+                                            </li>
                                             <li class="dropdown hidden-xs">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/res/site/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <img src="/res/site/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu 
+                                                    <b class="caret"></b>
+                                                </a>
+                                                
                                                 <ul class="dropdown-menu dropdown-md">
                                                     <li>
                                                         <div class="row">
+                                                            
                                                             <div class="col-md-4 col-sm-6">
                                                                 <!-- Menu Item -->
                                                                 <div class="menu-item">
@@ -247,6 +256,7 @@
                                                                     <a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
                                                                 </div>
                                                             </div>
+                                                            
                                                             <div class="col-md-4 col-sm-6">
                                                                 <!-- Menu Item -->
                                                                 <div class="menu-item">
@@ -260,6 +270,7 @@
                                                                     <a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
                                                                 </div>
                                                             </div>
+                                                            
                                                             <div class="col-md-4">
                                                                 <!-- Menu Item -->
                                                                 <div class="menu-item">
@@ -273,6 +284,7 @@
                                                                     <a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
                                                                 </div>
                                                             </div>
+
                                                         </div>
                                                     </li>
                                                 </ul>

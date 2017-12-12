@@ -21,10 +21,12 @@ class Category extends Model {
 
 		$sql = new Sql();
 
-		$results = $sql->select( "CALL sp_categories_save( :idcategory, :descategory )", 
+		$results = $sql->select( "CALL sp_categories_save( :idcategory, :descategory, :desdescription, :availablemenu )", 
                                   array( 
-                                  	":idcategory"  => $this->getidcategory(),
-	                                ":descategory" => $this->getdescategory() ) 
+                                  	":idcategory"     => $this->getidcategory(),
+	                                ":descategory"    => $this->getdescategory(),
+	                                ":desdescription" => $this->getdesdescription(),
+	                                ":availablemenu"  => $this->getavailablemenu() ) 
 	                           );
 
 		if ( count( $results ) > 0 ) {
@@ -71,6 +73,7 @@ class Category extends Model {
 
 			$html = [];
 
+			# Atualizando o menu de categorias da index, no rodapé.
 			foreach ( $categories as $row ) {
 				array_push( $html, '<li><a href="/category/' . $row[ 'idcategory' ].'">' . $row[ 'descategory' ] . '<a/></li>' );
 			}
