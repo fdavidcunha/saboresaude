@@ -33,7 +33,13 @@
 
             <div class="checkbox">
               <label>
-                <input type="checkbox" name="availablemenu" value="1" <?php if( $category["availablemenu"] == 1 ){ ?>checked<?php } ?>> Disponível no menu do site
+                <input type="checkbox" id="availablemenu" name="availablemenu" value="1" <?php if( $category["availablemenu"] == 1 ){ ?>checked<?php } ?>> Disponível no menu do site
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="availablefooter" name="availablefooter" value="1" <?php if( $category["availablefooter"] == 1 ){ ?>checked<?php } ?>> Disponível no rodapé do site
               </label>
             </div>
 

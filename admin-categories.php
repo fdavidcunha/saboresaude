@@ -62,6 +62,10 @@
 
 		User::verifyLogin();
 
+		// Validando se o valor do campo foi realmente informado.
+		$_POST[ "availablemenu" ] = ( isset( $_POST[ "availablemenu" ]) ) ? 1 : 0;
+		$_POST[ "availablefooter" ] = ( isset( $_POST[ "availablefooter" ]) ) ? 1 : 0;
+
 		$category = new Category();
 		$category->setData( $_POST );
 		$category->save();
@@ -100,6 +104,10 @@
 	$app->post( "/admin/categories/:idcategory", function( $idcategory ){
 
 		User::verifyLogin();
+
+		// Validando se o valor do campo foi realmente informado.
+		$_POST[ "availablemenu" ] = ( isset( $_POST[ "availablemenu" ]) ) ? 1 : 0;
+		$_POST[ "availablefooter" ] = ( isset( $_POST[ "availablefooter" ]) ) ? 1 : 0;
 
 		$category = new Category();
 		$category->get( (int)$idcategory );
