@@ -21,12 +21,13 @@ class Category extends Model {
 
 		$sql = new Sql();
 
-		$results = $sql->select( "CALL sp_categories_save( :idcategory, :descategory, :desdescription, :availablemenu )", 
+		$results = $sql->select( "CALL sp_categories_save( :idcategory, :descategory, :desdescription, :availablemenu, :availablefooter )", 
                                   array( 
-                                  	":idcategory"     => $this->getidcategory(),
-	                                ":descategory"    => $this->getdescategory(),
-	                                ":desdescription" => $this->getdesdescription(),
-	                                ":availablemenu"  => $this->getavailablemenu() ) 
+                                  	":idcategory"      => $this->getidcategory(),
+	                                ":descategory"     => $this->getdescategory(),
+	                                ":desdescription"  => $this->getdesdescription(),
+	                                ":availablemenu"   => $this->getavailablemenu(),
+	                                ":availablefooter" => $this->getavailablefooter() ) 
 	                           );
 
 		if ( count( $results ) > 0 ) {

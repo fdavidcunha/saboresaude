@@ -114,7 +114,7 @@
                                     <a class="cart-link" href="#">
                                         <!-- Image -->
                                         <img class="img-responsive foto-redonda" src="/res/site/img/male.png" alt="" />
-                                        
+                                       
                                         <!-- Heading -->
                                         <?php if( checkLogin(false) ){ ?>
                                             <h4>Olá, <?php echo getUserName(); ?></h4>
@@ -233,6 +233,16 @@
                                                     <img src="/res/site/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Início
                                                 </a>
                                             </li>
+
+
+                                            <?php $counter1=-1;  if( isset($categories) && ( is_array($categories) || $categories instanceof Traversable ) && sizeof($categories) ) foreach( $categories as $key1 => $value1 ){ $counter1++; ?>
+                                                <li>
+                                                    <a href="index.html">
+                                                        <img src="/res/site/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> <?php echo htmlspecialchars( $value1["idcategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?>
+                                                    </a>
+                                                </li>
+                                            <?php } ?>
+
                                             <li class="dropdown hidden-xs">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <img src="/res/site/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu 

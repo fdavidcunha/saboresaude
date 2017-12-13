@@ -52,7 +52,8 @@
                   <tr>
                     <th style="width: 10px">#</th>
                     <th>Nome</th>
-                    <th>Disp. Menu</th>
+                    <th>Disp. menu</th>
+                    <th>Disp. rodapé</th>
                     <th style="width: 240px">&nbsp;</th>
                   </tr>
                 </thead>
@@ -63,8 +64,9 @@
                     <td>{$value.idcategory}</td>
                     <td>{$value.descategory}</td>
                     <td>{if="$value.availablemenu == 1"}Sim{else}Não{/if}</td>
+                    <td>{if="$value.availablefooter == 1"}Sim{else}Não{/if}</td>
                     <td>
-                      
+
                       <a href="/admin/categories/{$value.idcategory}/products" class="btn btn-default btn-xs">
                         <i class="fa fa-edit"></i> Produtos
                       </a>
