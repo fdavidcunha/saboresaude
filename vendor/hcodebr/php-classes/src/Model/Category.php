@@ -16,6 +16,14 @@ class Category extends Model {
 		
 	}
 
+	public static function listAllAvailableMenu()
+	{
+		
+		$sql = new Sql();
+		return $sql->select( "select * from tb_categories where availablemenu = 1 order by descategory" );
+		
+	}
+
 	public function save()
 	{
 

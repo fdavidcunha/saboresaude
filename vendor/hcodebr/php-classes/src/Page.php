@@ -20,11 +20,9 @@ class Page {
 		
 		$this->options = array_merge( $this->defaults, $opts );
 
-		$categories = Category::listAll();
+		// Carregando as categorias que irão aparecer no menu do site.
+		$categories = Category::listAllAvailableMenu();
 		$this->options[ "categories" ] = $categories;
-
-		//var_dump( $this->options[ "categories" ][0] );
-		//exit();
 
 		$config = array(
 		    "base_url"  => null,
@@ -41,7 +39,7 @@ class Page {
 
 		if ( $this->options[ 'data' ] ) $this->setData( $this->options[ 'data' ] );
 
-		if ( $this->options[ 'categories' ] ) $this->setData( $this->options[ 'categories' ][0] );
+		if ( $this->options[ 'categories' ] ) $this->tpl->assign( "categories", $this->options[ 'categories' ] ); 
 
 		if ( $this->options[ 'header' ] === true ) $this->tpl->draw( "header", false );
 

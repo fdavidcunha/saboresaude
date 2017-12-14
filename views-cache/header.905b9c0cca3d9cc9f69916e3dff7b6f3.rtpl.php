@@ -108,8 +108,9 @@
                                     </span>
                                 </div>
                             </div>
+                            
                             <div class="col-md-4 col-sm-4">
-                                <!-- Button Kart -->
+                                <!-- Button Profile -->
                                 <div class="btn-cart-md">
                                     <a class="cart-link" href="#">
                                         <!-- Image -->
@@ -117,19 +118,45 @@
                                        
                                         <!-- Heading -->
                                         <?php if( checkLogin(false) ){ ?>
+                                            
                                             <h4>Olá, <?php echo getUserName(); ?></h4>
                                             <span>Minha conta</span>
                                             <div class="clearfix"></div>
+
+                                            <ul class="cart-dropdown" role="menu">
+                                                <li>
+                                                    <!-- Atralho para meus pedidos -->
+                                                    <div class="cart-item">
+                                                        <a class="btn btn-primary" data-toggle="modal" href="/profile/orders">Meus pedidos</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <!-- Atalho para configurações da conta -->
+                                                    <div class="cart-item">
+                                                        <a class="btn btn-primary" data-toggle="modal" href="/profile">Configurações</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <!-- Atalho para finalizar sessão no navegador -->
+                                                    <div class="cart-item">
+                                                        <a class="btn btn-danger" data-toggle="modal" href="/logout">Sair</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
+
                                         <?php }else{ ?>
+
                                             <h4>Olá, visitante</h4>
                                             <span>Login ou cadastre-se</span>
                                             <div class="clearfix"></div>
+                                            
                                         <?php } ?>
                                     </a>
-                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
+                            
                             <div class="col-md-2 col-sm-2">
                                 <!-- Button Kart -->
                                 <div class="btn-cart-md">
@@ -195,6 +222,7 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
+                        
                         </div>
                     </div>
                     <div class="row">
@@ -234,15 +262,6 @@
                                                 </a>
                                             </li>
 
-
-                                            <?php $counter1=-1;  if( isset($categories) && ( is_array($categories) || $categories instanceof Traversable ) && sizeof($categories) ) foreach( $categories as $key1 => $value1 ){ $counter1++; ?>
-                                                <li>
-                                                    <a href="index.html">
-                                                        <img src="/res/site/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> <?php echo htmlspecialchars( $value1["idcategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?>
-                                                    </a>
-                                                </li>
-                                            <?php } ?>
-
                                             <li class="dropdown hidden-xs">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <img src="/res/site/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu 
@@ -253,47 +272,24 @@
                                                     <li>
                                                         <div class="row">
                                                             
+                                                            <!-- Carregando o menu dinamicamente -->
+                                                            <?php $counter1=-1;  if( isset($categories) && ( is_array($categories) || $categories instanceof Traversable ) && sizeof($categories) ) foreach( $categories as $key1 => $value1 ){ $counter1++; ?>
+
                                                             <div class="col-md-4 col-sm-6">
                                                                 <!-- Menu Item -->
                                                                 <div class="menu-item">
                                                                     <!-- Heading -->
-                                                                    <h3>Vegetarian</h3>
+                                                                    <h3><?php echo htmlspecialchars( $value1["descategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?></h3>
                                                                     <!-- Image -->
                                                                     <img src="/res/site/img/dish/dish1.jpg" class="img-responsive" alt="" />
                                                                     <!-- Paragraph -->
-                                                                    <p>Sea nut perspicacity under omni piste natures mirror of there with consequent.</p>
+                                                                    <p><?php echo htmlspecialchars( $value1["desdescription"], ENT_COMPAT, 'UTF-8', FALSE ); ?></p>
                                                                     <!-- Button -->
-                                                                    <a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
+                                                                    <a href="menu.html" class="btn btn-danger btn-xs">Ver itens</a>
                                                                 </div>
                                                             </div>
                                                             
-                                                            <div class="col-md-4 col-sm-6">
-                                                                <!-- Menu Item -->
-                                                                <div class="menu-item">
-                                                                    <!-- Heading -->
-                                                                    <h3>Non-Vegetarian</h3>
-                                                                    <!-- Image -->
-                                                                    <img src="/res/site/img/dish/dish2.jpg" class="img-responsive" alt="" />
-                                                                    <!-- Paragraph -->
-                                                                    <p>Sea nut perspicacity under omni piste natures mirror as precode consequent.</p>
-                                                                    <!-- Button -->
-                                                                    <a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="col-md-4">
-                                                                <!-- Menu Item -->
-                                                                <div class="menu-item">
-                                                                    <!-- Heading -->
-                                                                    <h3>Special Menu</h3>
-                                                                    <!-- Image -->
-                                                                    <img src="/res/site/img/dish/dish3.jpg" class="img-responsive" alt="" />
-                                                                    <!-- Paragraph -->
-                                                                    <p>Sea nut perspicacity under omni piste natures mirror consequent.</p>
-                                                                    <!-- Button -->
-                                                                    <a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
-                                                                </div>
-                                                            </div>
+                                                            <?php } ?>
 
                                                         </div>
                                                     </li>
@@ -302,23 +298,51 @@
                                             <li class="dropdown visible-xs">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="menu.html">Vegetarian</a></li>
-                                                    <li><a href="menu.html">Non Vegetarian</a></li>
-                                                    <li><a href="menu.html">Special Menu</a></li>
+                                                    <li>
+                                                        <a href="menu.html">Vegetarian</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="menu.html">Non Vegetarian</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="menu.html">Special Menu</a>
+                                                    </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="gallery.html"><img src="/res/site/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Galeria</a></li>
+                                            <li>
+                                                <a href="gallery.html">
+                                                    <img src="/res/site/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Galeria
+                                                </a>
+                                            </li>
                                             <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/res/site/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <img src="/res/site/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Comprar 
+                                                    <b class="caret"></b>
+                                                </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="items.html">Shopping</a></li>
-                                                    <li><a href="item-single.html">Order Now</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                    <li><a href="reserve-seats.html">Reservation</a></li>
-                                                    <li><a href="contact.html">Contact Us</a></li>
+                                                    <li>
+                                                        <a href="items.html">Produtos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="item-single.html">Comprar agora</a>
+                                                    </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="aboutus.html"><img src="/res/site/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> Sobre nós</a></li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    <img src="/res/site/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> Sobre nós 
+                                                    <b class="caret"></b>
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="aboutus.html">Quem somos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact.html">Fale conosco</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </div><!-- /.navbar-collapse -->
                                 </div><!-- /.container-fluid -->
