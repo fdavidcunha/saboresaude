@@ -131,6 +131,12 @@
                                                     </div>
                                                 </li>
                                                 <li>
+                                                    <!-- Atralho para lista de desejos -->
+                                                    <div class="cart-item">
+                                                        <a class="btn btn-primary" data-toggle="modal" href="/desire-list">Lista de desejos</a>
+                                                    </div>
+                                                </li>
+                                                <li>
                                                     <!-- Atalho para configurações da conta -->
                                                     <div class="cart-item">
                                                         <a class="btn btn-primary" data-toggle="modal" href="/profile">Configurações</a>
@@ -228,7 +234,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-5">
                             <!-- Link -->
-                            <a href="index.html">
+                            <a href="/">
                                 <!-- Logo area -->
                                 <div class="logo">
                                     <img class="img-responsive" src="/res/site/img/logo-sabor-e-saude-small.png" alt="" />
@@ -257,7 +263,7 @@
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav">
                                             <li>
-                                                <a href="index.html">
+                                                <a href="/">
                                                     <img src="/res/site/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Início
                                                 </a>
                                             </li>
@@ -281,11 +287,11 @@
                                                                     <!-- Heading -->
                                                                     <h3>{$value.descategory}</h3>
                                                                     <!-- Image -->
-                                                                    <img src="/res/site/img/dish/dish1.jpg" class="img-responsive" alt="" />
+                                                                    <img src="{$category.desphoto}" class="img-responsive" alt="" />
                                                                     <!-- Paragraph -->
                                                                     <p>{$value.desdescription}</p>
                                                                     <!-- Button -->
-                                                                    <a href="menu.html" class="btn btn-danger btn-xs">Ver itens</a>
+                                                                    <a href="/category/{$value.idcategory}" class="btn btn-danger btn-xs">Ver itens</a>
                                                                 </div>
                                                             </div>
                                                             
@@ -324,7 +330,7 @@
                                                         <a href="items.html">Produtos</a>
                                                     </li>
                                                     <li>
-                                                        <a href="item-single.html">Comprar agora</a>
+                                                        <a href="item-single.html">Promoções</a>
                                                     </li>
                                                 </ul>
                                             </li>

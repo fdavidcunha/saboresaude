@@ -94,6 +94,8 @@
 
 		$category = new Category();
 		$category->get( (int)$idcategory );
+
+		$category = Category::checkList( $category );
 		
 		$page = new PageAdmin();
 		$page->setTpl( "categories-update", [ 'category' => $category->getValues() ] );
@@ -114,6 +116,10 @@
 		$category->setData( $_POST );
 		$category->save();
 		
+		if ( (int)$_FILES[ "file" ][ "size" ] > 0 ) {
+
+			$category->setPhoto( $_FILES[ "file" ] );
+		}
 
 		header("Location: /admin/categories");
 		exit();

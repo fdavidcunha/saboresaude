@@ -22,7 +22,7 @@ class Page {
 
 		// Carregando as categorias que irão aparecer no menu do site.
 		$categories = Category::listAllAvailableMenu();
-		$this->options[ "categories" ] = $categories;
+		$this->options[ "categories" ] = Category::checkList( $categories );
 
 		$config = array(
 		    "base_url"  => null,

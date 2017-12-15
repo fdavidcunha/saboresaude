@@ -221,6 +221,99 @@ class Category extends Model {
 
 	}
 
+	public function checkPhoto()
+	{
+
+		if ( file_exists( $_SERVER[ 'DOCUMENT_ROOT' ] .
+			              DIRECTORY_SEPARATOR .
+			              "res" . DIRECTORY_SEPARATOR .
+			              "site" . DIRECTORY_SEPARATOR .
+			              "img" . DIRECTORY_SEPARATOR .
+			              "categories" . DIRECTORY_SEPARATOR .
+			              $this->getidcategory() . ".jpg"
+		))
+		{
+
+			$url = "/res/site/img/categories/" . $this->getidcategory() . ".jpg";
+
+		} else {
+
+			$url = "/res/site/img/category.jpg";
+
+		}
+
+		return $this->setdesphoto( $url );
+	}
+
+	public function setPhoto( $file )
+	{
+
+		# Procurando pelo ponto e montando um array com a imagem.
+		$extension = explode( '.', $file[ 'name' ] );
+
+		# Informando que a extensão é a última posição do array.
+		$extension = end( $extension );
+
+		switch( $extension ) {
+
+			case "jpg":
+			case "jpeg":
+			$image = imagecreatefromjpeg( $file[ "tmp_name" ] );
+			break;
+
+			case "gif":
+			$image = imagecreatefromgif( $file[ "tmp_name" ] );
+			break;
+
+			case "png":
+			$image = imagecreatefrompng( $file[ "tmp_name" ] );
+			break;
+
+		}
+
+		$caminho = $_SERVER[ 'DOCUMENT_ROOT' ] .
+			       DIRECTORY_SEPARATOR .
+			       "res" . DIRECTORY_SEPARATOR .
+			       "site" . DIRECTORY_SEPARATOR .
+			       "img" . DIRECTORY_SEPARATOR .
+			       "categories" . DIRECTORY_SEPARATOR .
+			       $this->getidcategory() . ".jpg";
+
+		imagejpeg( $image, $caminho );
+
+		imagedestroy( $image );
+
+		$this->checkPhoto();
+
+	}
+
+	public function getValues()
+	{
+
+		$this->checkPhoto();
+
+		$values = parent::getValues();
+
+		return $values;
+
+	}
+
+	public static function checkList( $list )
+	{
+
+		# & = indica que será manipulada a posição de memória.
+		foreach ( $list as &$row ) {
+			
+			$p = new Category();
+			$p->setData( $row );
+			$row = $p->getValues();
+
+		}
+
+		return $list;
+
+	}
+
 }
 
  ?>
