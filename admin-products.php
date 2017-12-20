@@ -92,7 +92,7 @@
 		$product->get( (int)$idproduct );
 		$product->setData( $_POST );
 		$product->save();
-		
+
 		if ( (int)$_FILES[ "file" ][ "size" ] > 0 ) {
 
 			$product->setPhoto( $_FILES[ "file" ] );

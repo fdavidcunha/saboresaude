@@ -287,7 +287,7 @@
                                                                     <!-- Heading -->
                                                                     <h3><?php echo htmlspecialchars( $value1["descategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?></h3>
                                                                     <!-- Image -->
-                                                                    <img src="<?php echo htmlspecialchars( $category["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" class="img-responsive" alt="" />
+                                                                    <img src="<?php echo htmlspecialchars( $value1["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" class="img-responsive" alt="" style="width: 170px; height: 100px;" />
                                                                     <!-- Paragraph -->
                                                                     <p><?php echo htmlspecialchars( $value1["desdescription"], ENT_COMPAT, 'UTF-8', FALSE ); ?></p>
                                                                     <!-- Button -->
