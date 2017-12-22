@@ -175,48 +175,29 @@
                                         <div class="clearfix"></div>
                                     </a>
                                     <ul class="cart-dropdown" role="menu">
-                                        <li>
-                                            <!-- Cart items for shopping list -->
-                                            <div class="cart-item">
-                                                <!-- Item remove icon -->
-                                                <a href="#"><i class="fa fa-times"></i></a>
-                                                <!-- Image -->
-                                                <img class="img-responsive img-rounded" src="/res/site/img/nav-menu/nav1.jpg" alt="" />
-                                                <!-- Title for purchase item -->
-                                                <span class="cart-title"><a href="#">Exception Reins Evocative</a></span>
-                                                <!-- Cart item price -->
-                                                <span class="cart-price pull-right red">$200/-</span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <!-- Cart items for shopping list -->
-                                            <div class="cart-item">
-                                                <!-- Item remove icon -->
-                                                <a href="#"><i class="fa fa-times"></i></a>
-                                                <!-- Image -->
-                                                <img class="img-responsive img-rounded" src="/res/site/img/nav-menu/nav2.jpg" alt="" />
-                                                <!-- Title for purchase item -->
-                                                <span class="cart-title"><a href="#">Taut Mayoress Alias Appendicitis</a></span>
-                                                <!-- Cart item price -->
-                                                <span class="cart-price pull-right red">$190/-</span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <!-- Cart items for shopping list -->
-                                            <div class="cart-item">
-                                                <!-- Item remove icon -->
-                                                <a href="#"><i class="fa fa-times"></i></a>
-                                                <!-- Image -->
-                                                <img class="img-responsive img-rounded" src="/res/site/img/nav-menu/nav3.jpg" alt="" />
-                                                <!-- Title for purchase item -->
-                                                <span class="cart-title"><a href="#">Sinter et Molests Perfectionist</a></span>
-                                                <!-- Cart item price -->
-                                                <span class="cart-price pull-right red">$99/-</span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </li>
+
+                                        <!-- Carregando o carrinho do usuário dinamicamente -->
+                                        <?php $counter1=-1;  if( isset($cart_products) && ( is_array($cart_products) || $cart_products instanceof Traversable ) && sizeof($cart_products) ) foreach( $cart_products as $key1 => $value1 ){ $counter1++; ?>
+
+                                            <li>
+                                                <!-- Cart items for shopping list -->
+                                                <div class="cart-item">
+                                                    <!-- Item remove icon -->
+                                                    <a href="#">
+                                                        <i class="fa fa-times"></i>
+                                                    </a>
+                                                    <!-- Image -->
+                                                    <img src="<?php echo htmlspecialchars( $value1["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" class="img-responsive" alt="" style="width: 170px; height: 100px;" />
+                                                    <!-- Title for purchase item -->
+                                                    <span class="cart-title"><a href="#"><?php echo htmlspecialchars( $value1["desproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?></a></span>
+                                                    <!-- Cart item price -->
+                                                    <span class="cart-price pull-right red"><?php echo htmlspecialchars( $value1["vlprice"], ENT_COMPAT, 'UTF-8', FALSE ); ?></span>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </li>
+
+                                        <?php } ?>
+
                                         <li>
                                             <!-- Cart items for shopping list -->
                                             <div class="cart-item">
@@ -315,7 +296,7 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li>
+                                            <!--<li>
                                                 <a href="gallery.html">
                                                     <img src="/res/site/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Galeria
                                                 </a>
@@ -333,7 +314,7 @@
                                                         <a href="item-single.html">Promoções</a>
                                                     </li>
                                                 </ul>
-                                            </li>
+                                            </li>-->
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <img src="/res/site/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> Sobre nós 

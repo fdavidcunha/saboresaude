@@ -4,15 +4,19 @@ namespace Hcode;
 
 use Rain\Tpl;
 use \Hcode\Model\Category;
+use \Hcode\Model\Cart;
+use \Hcode\Model\Product;
 
 class Page {
 
 	private $tpl;
 	private $options = [];
-	private $defaults = [ "header"     => true,
-		                  "footer"     => true,
-		                  "categories" => [],
-		                  "data"       => []
+	private $defaults = [ "header"        => true,
+		                  "footer"        => true,
+		                  "categories"    => [],
+		                  "cart_values"   => [],
+		                  "cart_products" => [],
+		                  "data"          => []
 	                    ];
 
 	public function __construct( $opts = array(), $tpl_dir = "/views/" )
@@ -23,6 +27,11 @@ class Page {
 		// Carregando as categorias que irão aparecer no menu do site.
 		$categories = Category::listAllAvailableMenu();
 		$this->options[ "categories" ] = Category::checkList( $categories );
+
+		// Obtendo o carrinho do usuário.
+		$cart = Cart::getFromSession();
+		$this->options[ "cart_values" ]   = $cart->getValues();
+		$this->options[ "cart_products" ] = Product::checkList( $cart->getProducts() );
 
 		$config = array(
 		    "base_url"  => null,
@@ -40,6 +49,10 @@ class Page {
 		if ( $this->options[ 'data' ] ) $this->setData( $this->options[ 'data' ] );
 
 		if ( $this->options[ 'categories' ] ) $this->tpl->assign( "categories", $this->options[ 'categories' ] ); 
+
+		if ( $this->options[ 'cart_values' ] ) $this->tpl->assign( "cart_values", $this->options[ 'cart_values' ] ); 
+
+		if ( $this->options[ 'cart_products' ] ) $this->tpl->assign( "cart_products", $this->options[ 'cart_products' ] ); 
 
 		if ( $this->options[ 'header' ] === true ) $this->tpl->draw( "header", false );
 
