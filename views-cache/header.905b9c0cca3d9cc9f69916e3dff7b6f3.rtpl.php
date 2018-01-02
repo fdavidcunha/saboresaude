@@ -37,7 +37,7 @@
     <body>
             
         <!-- Shopping cart Modal -->
-        <div class="modal fade" id="shoppingcart1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade" id="modal-carrinho" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -49,32 +49,24 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
+                                    <th>Produto</th>
+                                    <th>Quantidade</th>
+                                    <th>Preço</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><a href="#">Exception Reins Evocative</a></td>
-                                    <td>2</td>
-                                    <td>$200</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Taut Mayoress Alias Appendicitis</a></td>
-                                    <td>1</td>
-                                    <td>$190</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Sinter et Molests Perfectionist</a></td>
-                                    <td>4</td>
-                                    <td>$99</td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <th>Total</th>
-                                    <th>$489</th>
-                                </tr>
+                                
+                                <!-- Exibindo os produtos do carrinho no modal -->
+                                <?php $counter1=-1;  if( isset($cart_products) && ( is_array($cart_products) || $cart_products instanceof Traversable ) && sizeof($cart_products) ) foreach( $cart_products as $key1 => $value1 ){ $counter1++; ?>
+                                    <tr>
+                                        <td>
+                                            <a href="#"><?php echo htmlspecialchars( $value1["desproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?></a>
+                                        </td>
+                                        <td><?php echo htmlspecialchars( $value1["nrqtd"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
+                                        <td><?php echo htmlspecialchars( $value1["vlprice"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
+                                    </tr>
+                                <?php } ?>
+
                             </tbody>
                         </table>
                     </div>
@@ -127,25 +119,25 @@
                                                 <li>
                                                     <!-- Atralho para meus pedidos -->
                                                     <div class="cart-item">
-                                                        <a class="btn btn-primary" data-toggle="modal" href="/profile/orders">Meus pedidos</a>
+                                                        <a class="btn btn-primary" href="/profile/orders">Meus pedidos</a>
                                                     </div>
                                                 </li>
-                                                <li>
-                                                    <!-- Atralho para lista de desejos -->
+                                                <!--<li>
+                                                    <!-- Atralho para lista de desejos 
                                                     <div class="cart-item">
                                                         <a class="btn btn-primary" data-toggle="modal" href="/desire-list">Lista de desejos</a>
                                                     </div>
                                                 </li>
-                                                <li>
+                                                <li>-->
                                                     <!-- Atalho para configurações da conta -->
                                                     <div class="cart-item">
-                                                        <a class="btn btn-primary" data-toggle="modal" href="/profile">Configurações</a>
+                                                        <a class="btn btn-primary" href="/profile">Configurações</a>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <!-- Atalho para finalizar sessão no navegador -->
                                                     <div class="cart-item">
-                                                        <a class="btn btn-danger" data-toggle="modal" href="/logout">Sair</a>
+                                                        <a class="btn btn-danger" href="/logout">Sair</a>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -174,6 +166,8 @@
                                         <span><?php echo getCartNrQtd(); ?> itens <?php echo getCartVlSubTotal(); ?></span>
                                         <div class="clearfix"></div>
                                     </a>
+                                    
+                                    <?php if( isset($cart_product) ){ ?>
                                     <ul class="cart-dropdown" role="menu">
 
                                         <!-- Carregando o carrinho do usuário dinamicamente -->
@@ -201,11 +195,13 @@
                                         <li>
                                             <!-- Cart items for shopping list -->
                                             <div class="cart-item">
-                                                <a class="btn btn-danger" data-toggle="modal" href="#shoppingcart1">Resumo do pedido</a>
+                                                <a class="btn btn-danger" data-toggle="modal" href="#modal-carrinho">Resumo do pedido</a>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="clearfix"></div>
+                                    <?php } ?>
+
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
