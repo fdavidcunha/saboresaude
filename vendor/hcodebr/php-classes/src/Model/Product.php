@@ -35,17 +35,27 @@ class Product extends Model {
 
 		$sql = new Sql();
 
-		$results = $sql->select( "CALL sp_products_save( :pidproduct, :pdesproduct, :pvlprice, :pvlwidth, :pvlheight, :pvllength, :pvlweight, :pdesurl, :pdesdescription )", 
+		$results = $sql->select( "CALL sp_products_save( :pidproduct, 
+														 :pdesproduct, 
+														 :pvlprice, 
+														 :pvlwidth, 
+														 :pvlheight, 
+														 :pvllength, 
+														 :pvlweight, 
+														 :pdesurl, 
+														 :pdesdescription,
+														 :pavailablefooter )", 
                                   array( 
-                                  	":pidproduct"      => $this->getidproduct(),
-                                  	":pdesproduct"     => $this->getdesproduct(),
-                                  	":pvlprice"        => $this->getvlprice(),
-                                  	":pvlwidth"        => $this->getvlwidth(),
-                                  	":pvlheight"       => $this->getvlheight(),
-                                  	":pvllength"       => $this->getvllength(),
-                                  	":pvlweight"       => $this->getvlweight(),
-	                                ":pdesurl"         => $this->getdesurl(), 
-	                                ":pdesdescription" => $this->getdesdescription() 
+                                  	":pidproduct"       => $this->getidproduct(),
+                                  	":pdesproduct"      => $this->getdesproduct(),
+                                  	":pvlprice"         => $this->getvlprice(),
+                                  	":pvlwidth"         => $this->getvlwidth(),
+                                  	":pvlheight"        => $this->getvlheight(),
+                                  	":pvllength"        => $this->getvllength(),
+                                  	":pvlweight"        => $this->getvlweight(),
+	                                ":pdesurl"          => $this->getdesurl(), 
+	                                ":pdesdescription"  => $this->getdesdescription(),
+	                                ":pavailablefooter" => $this->getavailablefooter() 
 	                            ));
 
 		$this->setData( $results[ 0 ] );

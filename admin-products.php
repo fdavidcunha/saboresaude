@@ -62,6 +62,10 @@
 		User::verifyLogin();
 
 		$product = new Product();
+
+		// Validando se o valor do campo foi realmente informado.
+		$_POST[ "availablefooter" ] = ( isset( $_POST[ "availablefooter" ]) ) ? 1 : 0;
+
 		$product->setData( $_POST );
 		$product->save();
 
@@ -90,6 +94,10 @@
 
 		$product = new Product();
 		$product->get( (int)$idproduct );
+
+		// Validando se o valor do campo foi realmente informado.
+		$_POST[ "availablefooter" ] = ( isset( $_POST[ "availablefooter" ]) ) ? 1 : 0;
+
 		$product->setData( $_POST );
 		$product->save();
 

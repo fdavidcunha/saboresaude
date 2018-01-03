@@ -10,22 +10,16 @@
                                 <div class="logo">
                                     <img class="img-responsive" src="/res/site/img/logo.png" alt="" />
                                     <!-- Heading -->
-                                    <h1>CakeFactory</h1>
+                                    <h1>Sabor & Saúde</h1>
                                 </div>
                                 <!-- Paragraph -->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+                                <p>Comida saudável.</p>
                                 <hr />
                                 <!-- Heading -->
-                                <h6>On-line Payment Clients</h6>
+                                <h6>Aceitamos</h6>
                                 <!-- Images -->
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/2co.gif" alt="" /></a>
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/authorizenet.gif" alt="" /></a>
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/discover.gif" alt="" /></a>
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/egold.gif" alt="" /></a>
                                 <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/mastercard.gif" alt="" /></a>
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/paypal.gif" alt="" /></a>
                                 <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/visa.gif" alt="" /></a>
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/worldpay.gif" alt="" /></a>
                             </div> <!--/ Footer widget end -->
                         </div>
                         <div class="col-md-3 col-sm-6">

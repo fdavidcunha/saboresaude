@@ -61,6 +61,12 @@
               <textarea class="form-control" id="desdescription" name="desdescription" placeholder="Descrição"><?php echo htmlspecialchars( $product["desdescription"], ENT_COMPAT, 'UTF-8', FALSE ); ?></textarea>
             </div>
 
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="availablefooter" name="availablefooter" value="1" <?php if( $product["availablefooter"] == 1 ){ ?>checked<?php } ?>> Disponível no rodapé do site
+              </label>
+            </div>
+
             <div class="form-group">
               <label for="file">Foto</label>
               <input type="file" class="form-control" id="file" name="file" value="<?php echo htmlspecialchars( $product["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>">
