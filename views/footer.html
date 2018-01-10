@@ -26,7 +26,7 @@
                             <!-- Footer widget -->
                             <div class="footer-widget">
                                 <!-- Heading -->
-                                <h4>Famous Dishes</h4>
+                                <h4>Pratos famosos</h4>
                                 <!-- Images -->
                                 <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
                                 <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
@@ -44,18 +44,18 @@
                             <!-- Footer widget -->
                             <div class="footer-widget">
                                 <!-- Heading -->
-                                <h4>Join Us Today</h4>
+                                <h4>Junte-se a nós</h4>
                                 <!-- Paragraph -->
-                                <p>There is no one who loves pain itself, who seeks after it and wants to have it.</p>
+                                <p>Informe seu nome e seu e-mail e te enviaremos nossas novidades e promoções.</p>
                                 <!-- Subscribe form -->
                                 <form role="form">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Your name" />
+                                        <input class="form-control" type="text" placeholder="Seu nome" />
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="Your email" />
+                                        <input class="form-control" type="email" placeholder="Seu e-mail" />
                                     </div>
-                                    <button class="btn btn-danger" type="button">Subscribe</button>
+                                    <button class="btn btn-danger" type="button">Enviar</button>
                                 </form>
                             </div> <!--/ Footer widget end -->
                         </div>
@@ -63,10 +63,10 @@
                             <!-- Footer widget -->
                             <div class="footer-widget">
                                 <!-- Heading -->
-                                <h4>Contact Us</h4>
+                                <h4>Contato</h4>
                                 <div class="contact-details">
                                     <!-- Address / Icon -->
-                                    <i class="fa fa-map-marker br-red"></i> <span>#768, 5th floor, N S Building,<br />Csm Block, Park Road,<br /> Bangalore - 234567</span>
+                                    <i class="fa fa-map-marker br-red"></i> <span>Edf Luciano Costa, 170<br />Csm Block, Park Road,<br /> Bangalore - 234567</span>
                                     <div class="clearfix"></div>
                                     <!-- Contact Number / Icon -->
                                     <i class="fa fa-phone br-green"></i> <span>+91 88-88-888888</span>
@@ -88,7 +88,7 @@
                     <!-- Copyright -->
                     <div class="footer-copyright">
                         <!-- Paragraph -->
-                        <p>&copy; Copyright 2014 <a href="#">Company Name</a></p>
+                        <p>&copy; Copyright 2018 <a href="www.seemantica.com.br">Seemantica Softwares</a></p>
                     </div>
                 </div>
             </div>

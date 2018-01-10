@@ -2,23 +2,52 @@
 /* Cart Button Drop Down */
 /* *************************************** */  
 
-/*$(document).ready(function() {
-	$('.btn-cart-md .cart-link').click(function(e){
-		e.preventDefault();
-		var $dd_menu = $('.btn-cart-md .cart-dropdown')
-		if ($dd_menu.hasClass('open')) {
-			$dd_menu.fadeOut();
-			$dd_menu.removeClass('open');
-		} else {
-			$dd_menu.fadeIn();
-			$dd_menu.addClass('open');
-		}
-	});
-});*/
+// $(document).ready(function() {
+// 	$('.btn-cart-md').click(function(e){
+// 		e.preventDefault();
+// 		var $dd_menu = $('.btn-cart-md .cart-dropdown')
+// 		if ($dd_menu.hasClass('open')) {
+// 			$dd_menu.fadeOut();
+// 			$dd_menu.removeClass('open');
+// 		} else {
+// 			$dd_menu.fadeIn();
+// 			$dd_menu.addClass('open');
+// 		}
+// 	});
+// });
+
+// $(document).ready(function() {
+// 	$('#btn-cart-items').click(function(e){
+// 		e.preventDefault();
+// 		var $dd_menu = $('.btn-cart-md .cart-dropdown')
+// 		if ($dd_menu.hasClass('open')) {
+// 			$dd_menu.fadeOut();
+// 			$dd_menu.removeClass('open');
+// 		} else {
+// 			$dd_menu.fadeIn();
+// 			$dd_menu.addClass('open');
+// 		}
+// 	});
+// });
+
+// $(document).ready(function() {
+// 	$('.btn-cart-md .cart-link').click(function(e){
+// 		e.preventDefault();
+// 		var $dd_menu = $('.btn-cart-md .cart-dropdown')
+// 		if ($dd_menu.hasClass('open')) {
+// 			$dd_menu.fadeOut();
+// 			$dd_menu.removeClass('open');
+// 		} else {
+// 			$dd_menu.fadeIn();
+// 			$dd_menu.addClass('open');
+// 		}
+// 	});
+// });
 
 $(document).ready(function() {
-   $('.btn-cart-md').click(function(e){
-      e.preventDefault();
+
+   $('#btn-cart-profile').click(function(e){
+      //e.preventDefault();
       var $dd_menu = $(this).find('.cart-dropdown');
       if ($dd_menu.hasClass('open')) {
          $dd_menu.fadeOut(); $dd_menu.removeClass('open');
@@ -27,6 +56,20 @@ $(document).ready(function() {
       }
    });
 });
+
+$(document).ready(function() {
+
+   $('#btn-cart-items').click(function(e){
+      //e.preventDefault();
+      var $dd_menu = $(this).find('.cart-dropdown');
+      if ($dd_menu.hasClass('open')) {
+         $dd_menu.fadeOut(); $dd_menu.removeClass('open');
+         } else {
+            $dd_menu.fadeIn(); $dd_menu.addClass('open');
+      }
+   });
+});
+
 
 /* *************************************** */ 
 /* Tool Tip JS */

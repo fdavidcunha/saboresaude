@@ -102,8 +102,36 @@
                             </div>
                             
                             <div class="col-md-4 col-sm-4">
+
                                 <!-- Button Profile -->
-                                <div class="btn-cart-md">
+                                <div id="btn-cart-profile" class="btn-cart-md">
+                                    <ul class="cart-dropdown" role="menu">
+                                        <li>
+                                            <!-- Atralho para meus pedidos -->
+                                            <div class="cart-item">
+                                                <a class="btn btn-primary" href="/profile/orders">Meus pedidos</a>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <!-- Atralho para lista de desejos 
+                                            <div class="cart-item">
+                                                <a class="btn btn-primary" data-toggle="modal" href="/desire-list">Lista de desejos</a>
+                                            </div>
+                                        </li> -->
+                                        <li>
+                                            <!-- Atalho para configurações da conta -->
+                                            <div class="cart-item">
+                                                <a class="btn btn-primary" href="/profile">Configurações</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!-- Atalho para finalizar sessão no navegador -->
+                                            <div class="cart-item">
+                                                <a class="btn btn-danger" href="/logout">Sair</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+
                                     <a class="cart-link" href="#">
                                         <!-- Image -->
                                         <img class="img-responsive foto-redonda" src="/res/site/img/male.png" alt="" />
@@ -127,8 +155,8 @@
                                                     <div class="cart-item">
                                                         <a class="btn btn-primary" data-toggle="modal" href="/desire-list">Lista de desejos</a>
                                                     </div>
-                                                </li>
-                                                <li>-->
+                                                </li> -->
+                                                <li>
                                                     <!-- Atalho para configurações da conta -->
                                                     <div class="cart-item">
                                                         <a class="btn btn-primary" href="/profile">Configurações</a>
@@ -157,7 +185,7 @@
                             
                             <div class="col-md-2 col-sm-2">
                                 <!-- Button Kart -->
-                                <div class="btn-cart-md">
+                                <div class="btn-cart-md" id="btn-cart-items">
                                     <a class="cart-link" href="#">
                                         <!-- Image -->
                                         <img class="img-responsive" src="/res/site/img/cart.png" alt="" />
@@ -336,3 +364,8 @@
             </div>
 
             <!-- Header End -->
+<Script>
+function teste (){
+    alert('teste');
+}
+</Script>
