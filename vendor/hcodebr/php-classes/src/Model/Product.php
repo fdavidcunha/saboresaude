@@ -14,6 +14,12 @@ class Product extends Model {
 		return $sql->select( "select * from tb_products order by desproduct" );
 	}
 
+	public static function listAllFamousDishes()
+	{
+		$sql = new Sql();
+		return $sql->select( "select * from tb_products where availablefooter = '1' order by desproduct" );
+	}
+
 	public static function checkList( $list )
 	{
 

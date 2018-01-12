@@ -8,7 +8,7 @@
                             <div class="footer-widget">
                                 <!-- Logo area -->
                                 <div class="logo">
-                                    <img class="img-responsive" src="/res/site/img/logo.png" alt="" />
+                                    <img class="img-responsive" src="/res/site/img/logo-sabor-e-saude-small.png" alt="" />
                                     <!-- Heading -->
                                     <h1>Sabor & Saúde</h1>
                                 </div>
@@ -18,8 +18,21 @@
                                 <!-- Heading -->
                                 <h6>Aceitamos</h6>
                                 <!-- Images -->
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/mastercard.gif" alt="" /></a>
-                                <a href="#"><img class="payment img-responsive" src="/res/site/img/payment/visa.gif" alt="" /></a>
+                                <a href="#">
+                                    <img class="payment img-responsive" src="/res/site/img/payment/mastercard.gif" alt="" />
+                                </a>
+                                <a href="#">
+                                    <img class="payment img-responsive" src="/res/site/img/payment/visa.gif" alt="" />
+                                </a>
+                                <a href="#">
+                                    <img class="payment img-responsive" src="/res/site/img/payment/hipercard.gif" alt="" />
+                                </a>
+                                <a href="#">
+                                    <img class="payment img-responsive" src="/res/site/img/payment/sodexo.gif" alt="" />
+                                </a>
+                                <a href="#">
+                                    <img class="payment img-responsive" src="/res/site/img/payment/alelo.gif" alt="" />
+                                </a>
                             </div> <!--/ Footer widget end -->
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -28,15 +41,11 @@
                                 <!-- Heading -->
                                 <h4>Pratos famosos</h4>
                                 <!-- Images -->
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
-                                <a href="#"><img class="dish img-responsive" src="/res/site/img/dish/dish1.jpg" alt="" /></a>
+                                <?php $counter1=-1;  if( isset($famous_dishes) && ( is_array($famous_dishes) || $famous_dishes instanceof Traversable ) && sizeof($famous_dishes) ) foreach( $famous_dishes as $key1 => $value1 ){ $counter1++; ?>
+                                    <a href="/product/<?php echo htmlspecialchars( $value1["idproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?>">
+                                        <img class="dish img-responsive" src="<?php echo htmlspecialchars( $value1["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" alt="Prato" style="width: 66px; height: 66px;"/>
+                                    </a>
+                                <?php } ?>
                             </div> <!--/ Footer widget end -->
                         </div>
                         <div class="clearfix visible-sm"></div>
@@ -48,7 +57,7 @@
                                 <!-- Paragraph -->
                                 <p>Informe seu nome e seu e-mail e te enviaremos nossas novidades e promoções.</p>
                                 <!-- Subscribe form -->
-                                <form role="form">
+                                <form role="form" action="/feed">
                                     <div class="form-group">
                                         <input class="form-control" type="text" placeholder="Seu nome" />
                                     </div>
@@ -66,21 +75,28 @@
                                 <h4>Contato</h4>
                                 <div class="contact-details">
                                     <!-- Address / Icon -->
-                                    <i class="fa fa-map-marker br-red"></i> <span>Edf Luciano Costa, 170<br />Csm Block, Park Road,<br /> Bangalore - 234567</span>
+                                    <i class="fa fa-map-marker br-red"></i> 
+                                    <span>Edf Luciano Costa, 170, Loja B
+                                        <br />Rua Dona Maria César, Recife - PE,<br /> 50.030-140
+                                    </span>
                                     <div class="clearfix"></div>
                                     <!-- Contact Number / Icon -->
-                                    <i class="fa fa-phone br-green"></i> <span>+91 88-88-888888</span>
+                                    <i class="fa fa-phone br-green"></i> 
+                                    <span>+55 81 3224-1706</span>
                                     <div class="clearfix"></div>
                                     <!-- Email / Icon -->
-                                    <i class="fa fa-envelope-o br-lblue"></i> <span><a href="#">abc@example.com</a></span>
+                                    <i class="fa fa-envelope-o br-lblue"></i> 
+                                    <span><a href="#">contato@temsaboresaude.com.br</a></span>
                                     <div class="clearfix"></div>
                                 </div>
                                 <!-- Social media icon -->
                                 <div class="social">
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                                    <a href="https://www.facebook.com/saboresaudesaladadefrutas/" class="facebook" target="blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com.br/pontosaboresaude" class="instagram" target="blank">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
                                 </div>
                             </div> <!--/ Footer widget end -->
                         </div>
@@ -100,8 +116,6 @@
         
         <!-- Scroll to top -->
         <span class="totop"><a href="#"><i class="fa fa-angle-up"></i></a></span> 
-        
-        
         
         <!-- Javascript files -->
         <!-- jQuery -->

@@ -838,7 +838,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- BLock heading -->
-                                <h3>Recent Dishes</h3>
+                                <h3>Recentemente vendidos</h3>
                                 <!-- Flex slider Content -->
                                 <div class="flexslider-recent flexslider">
                                     <ul class="slides">

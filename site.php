@@ -102,4 +102,23 @@
 
 	} );
 
+	$app->post( "/feed", function() {
+
+
+		if ( !isset( $_POST[ 'desperson' ] ) || $_POST[ 'desperson' ] === '' ){
+
+			User::setError( "Preencha o seu nome." );
+			header( 'location: /profile' );
+			exit();
+		}
+
+		if ( !isset( $_POST[ 'desemail' ] ) || $_POST[ 'desemail' ] === '' ){
+
+			User::setError( "Preencha o seu e-mail." );
+			header( 'location: /profile' );
+			exit();
+		}
+	
+	} );
+
 ?>

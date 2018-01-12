@@ -16,6 +16,7 @@ class Page {
 		                  "categories"    => [],
 		                  "cart_values"   => [],
 		                  "cart_products" => [],
+		                  "famous_dishes" => [],
 		                  "data"          => []
 	                    ];
 
@@ -27,6 +28,10 @@ class Page {
 		// Carregando as categorias que irão aparecer no menu do site.
 		$categories = Category::listAllAvailableMenu();
 		$this->options[ "categories" ] = Category::checkList( $categories );
+
+		// Carregando os produtos famosos que irão aparecer no rodapé da página.
+		$famous_dishes = Product::listAllFamousDishes();
+		$this->options[ "famous_dishes" ] = Product::checkList( $famous_dishes );
 
 		// Obtendo o carrinho do usuário.
 		$cart = Cart::getFromSession();
@@ -49,6 +54,8 @@ class Page {
 		if ( $this->options[ 'data' ] ) $this->setData( $this->options[ 'data' ] );
 
 		if ( $this->options[ 'categories' ] ) $this->tpl->assign( "categories", $this->options[ 'categories' ] ); 
+
+		if ( $this->options[ 'famous_dishes' ] ) $this->tpl->assign( "famous_dishes", $this->options[ 'famous_dishes' ] ); 
 
 		if ( $this->options[ 'cart_values' ] ) $this->tpl->assign( "cart_values", $this->options[ 'cart_values' ] ); 
 
